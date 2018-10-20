@@ -244,3 +244,80 @@
         height: 100%; }
     .nb-testimonial .right-testimonial-info .testimonial-details {
       text-align: center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Editor styles for the admin
+ */
+.ninja-block-cta {
+  margin-bottom: 0; }
+
+.ninja-cta-button .blocks-button__inline-link .editor-url-input {
+  display: inline-block;
+  width: auto; }
+
+.ninja-cta-button .blocks-button__inline-link .components-button {
+  display: inline-block; }
+
+.ninja-cta-button .blocks-button__inline-link svg {
+  vertical-align: middle;
+  margin-right: 8px; }
+
+.ninja-block-cta h2.editor-rich-text__tinymce.mce-content-body {
+  line-height: 1.2; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.ninja-dc-content p::first-letter {
+  float: left;
+  font-size: 80px;
+  line-height: 0.7em;
+  margin-top: 0.13em;
+  margin-right: 15px;
+  margin-bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.ninja-dc-content .ninja-dc-font-size-1.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 75px; }
+
+.ninja-dc-content .ninja-dc-font-size-2.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 85px; }
+
+.ninja-dc-content .ninja-dc-font-size-3.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 95px; }
+
+.ninja-dc-content .ninja-dc-font-size-4.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 105px; }
+
+.ninja-dc-content .ninja-dc-font-size-5.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 115px; }
+
+.ninja-dc-content .ninja-dc-font-size-6.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 125px; }
+
+.ninja-dc-content .ninja-dc-font-size-7.ninja-drop-cap-text:not(:focus):first-letter {
+  font-size: 135px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.ninja_block_container {
+  margin: 0 0 1.2em 0;
+  position: relative;
+  padding: 0; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
