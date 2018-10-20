@@ -17,3 +17,9 @@ import "./block/block-heading/index.js";
 
 // Uttpol team member
 // import "./block/team-member/index.js";
+
+// Lahin
+import "./block/lh-cta/containers/index.js";
+import "./block/lh-drop-cap/containers/index.js";
+import "./block/lh-spacer/containers/index.js";
+import "./block/lh-divider/containers/index.js";
