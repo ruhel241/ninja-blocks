@@ -1,0 +1,46 @@
+.NinjaButton {
+	// display: table;
+	// border: solid 3px;
+	// margin-right: auto;
+	// background-color: red;
+	// color: #fff;
+	// border: solid 3px;
+	// display: inline-block;
+	// margin: 0 auto;
+	// width: auto;
+	// // position: relative;
+	// border-radius: 5%;
+	// line-height: 47px;
+
+	.nb_button {
+		padding: 0.6em 1em;
+		// top: 0;
+		// margin: 10px;
+		// cursor: pointer;
+		// color: black ;
+	}
+}
+
+.NinjaButton-right {
+	display: table;
+	margin-left: auto;
+}
+
+.NinjaButton-center {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.NinjaButton-left {
+	display: table;
+	margin-right: auto;
+}
+
+.nb_button_url_link {
+	text-align: center;
+	.linkIcon {
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}

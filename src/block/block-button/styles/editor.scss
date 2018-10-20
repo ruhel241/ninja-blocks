@@ -1,0 +1,22 @@
+.NinjaButton {
+	border: solid 3px;
+}
+
+.nb_button_url_link {
+	.editor-url-input {
+		display: inline-block;
+		width: auto;
+	}
+	// .adminLinks {
+	// 	position: absolute;
+	// 	left: -31px;
+	// 	bottom: 13px;
+	// }
+	.btn-link:hover {
+		text-decoration: none;
+		border-bottom: none;
+	}
+	.nb-apply-iconbutton {
+		display: inline-block;
+	}
+}

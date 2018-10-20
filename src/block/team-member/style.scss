@@ -1,0 +1,98 @@
+.wp-block-columns{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.wp-block-column{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.wp-block-ninja-blocks-team-member{
+  .components-button:not(:disabled):not([aria-disabled=true]):focus{
+    outline: none;
+    box-shadow: none;
+  }
+  .wp-block-ninja-blocks-team-member__avatar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -65px;
+    line-height: 0;
+    height: 125px;
+    width: 125px;
+    position: relative;
+    button{
+      border: 1px solid #dedede;
+      border-radius: 50%;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      display: inherit;
+      cursor: pointer;
+      padding: 0;
+    }
+  }
+ 
+  .wp-block-ninja-blocks-team-member__single{
+    img{
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      height: 125px;
+      width: 125px;
+      border-radius: 100%;
+      border: 1px solid #dedede;
+      padding: 10px;
+      margin-bottom: -65px;
+      display: inline-block;
+    }
+  }
+  &.round{
+    img.team-img{
+      border-radius: 100%;
+    }
+  }
+  .wp-block-ninja-blocks-team-member__content{
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 85px 20px 50px;
+    h2{
+      margin-top: 0;
+    }
+    p{
+      overflow: inherit;
+    }
+    .namey,
+    .designation,
+    {
+      color: #222222;
+    }
+    p:not(.mce-content-body),
+    h2:not(.mce-content-body){
+      color: #222222;
+    }
+    .social-iteams{
+      margin-top: 30px;
+      &.has-border-top{
+        border-top: 1px solid #dedede;
+        padding-top: 25px;
+      }
+      a i{
+        border-radius: 50%;
+        border: 1px solid #dedede;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        line-height: 55px;
+        background-color: transparent;
+        color: #47b475;
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+
+}

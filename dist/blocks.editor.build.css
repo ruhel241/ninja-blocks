@@ -1,0 +1,246 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb-testimonial {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f2f2f2; }
+  .nb-testimonial .testimonial-content {
+    padding: 5px 20px 20px 20px; }
+  .nb-testimonial .testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 5px 10px 0px 14px; }
+    .nb-testimonial .testimonial-info .image {
+      background: #ddd;
+      margin-right: 15px;
+      position: relative;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px; }
+      .nb-testimonial .testimonial-info .image button {
+        height: 100%;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 50;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important; }
+        .nb-testimonial .testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .testimonial-info .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100% !important; }
+  .nb-testimonial .middle-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial .middle-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px; }
+      .nb-testimonial .middle-testimonial-info .image button {
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important;
+        padding: 0; }
+        .nb-testimonial .middle-testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .middle-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial .middle-testimonial-info .testimonial-details {
+      text-align: center; }
+  .nb-testimonial .right-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial .right-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-left: 15px; }
+      .nb-testimonial .right-testimonial-info .image button {
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important;
+        padding: 0; }
+        .nb-testimonial .right-testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .right-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial .right-testimonial-info .testimonial-details {
+      text-align: center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.NinjaButton {
+  border: solid 3px; }
+
+.nb_button_url_link .editor-url-input {
+  display: inline-block;
+  width: auto; }
+
+.nb_button_url_link .btn-link:hover {
+  text-decoration: none;
+  border-bottom: none; }
+
+.nb_button_url_link .nb-apply-iconbutton {
+  display: inline-block; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.profileSocialIconIndicator .iconIndicator {
+  width: 28px;
+  height: 22px;
+  margin-right: 0.8rem;
+  border: 1px solid #dadada;
+  display: inline-block;
+  margin-top: -7px;
+  cursor: pointer;
+  background-image: url("../src/block/block-profile/image/social-bg.png"); }
+
+.iconColor {
+  margin: 0; }
+
+.SocialItem {
+  margin: 0; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb-testimonial {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f2f2f2; }
+  .nb-testimonial .testimonial-content {
+    padding: 5px 20px 20px 20px; }
+  .nb-testimonial .testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 5px 10px 0px 14px; }
+    .nb-testimonial .testimonial-info .image {
+      background: #ddd;
+      margin-right: 15px;
+      position: relative;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px; }
+      .nb-testimonial .testimonial-info .image button {
+        height: 100%;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 50;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important; }
+        .nb-testimonial .testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .testimonial-info .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100% !important; }
+  .nb-testimonial .middle-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial .middle-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px; }
+      .nb-testimonial .middle-testimonial-info .image button {
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important;
+        padding: 0; }
+        .nb-testimonial .middle-testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .middle-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial .middle-testimonial-info .testimonial-details {
+      text-align: center; }
+  .nb-testimonial .right-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial .right-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-left: 15px; }
+      .nb-testimonial .right-testimonial-info .image button {
+        width: 100%;
+        height: 100%;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+        background: none !important;
+        padding: 0; }
+        .nb-testimonial .right-testimonial-info .image button svg {
+          margin: 0 auto; }
+      .nb-testimonial .right-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial .right-testimonial-info .testimonial-details {
+      text-align: center; }

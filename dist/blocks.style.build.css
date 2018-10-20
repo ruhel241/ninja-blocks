@@ -1,0 +1,412 @@
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb-testimonial-display {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f2f2f2; }
+  .nb-testimonial-display .testimonial-content {
+    padding: 5px 20px 20px 20px; }
+  .nb-testimonial-display .testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 5px 10px 0px 14px; }
+    .nb-testimonial-display .testimonial-info .image {
+      background: #ddd;
+      margin-right: 15px;
+      position: relative;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px; }
+      .nb-testimonial-display .testimonial-info .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100% !important; }
+  .nb-testimonial-display .middle-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial-display .middle-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px; }
+      .nb-testimonial-display .middle-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial-display .middle-testimonial-info .testimonial-details {
+      text-align: center; }
+  .nb-testimonial-display .right-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial-display .right-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-left: 15px; }
+      .nb-testimonial-display .right-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial-display .right-testimonial-info .testimonial-details {
+      text-align: center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb_noticeBox {
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-radius: 10px;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap; }
+  .nb_noticeBox .notice_text {
+    margin-left: 10px;
+    -ms-flex: 1;
+        flex: 1; }
+    .nb_noticeBox .notice_text p {
+      margin: 0 !important; }
+  .nb_noticeBox .notice_icon {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background: #eeeeee9c;
+    border-radius: 50%;
+    margin-right: 10px;
+    z-index: 5;
+    cursor: pointer; }
+    .nb_noticeBox .notice_icon span {
+      height: 100%;
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.NinjaButton .nb_button {
+  padding: 0.6em 1em; }
+
+.NinjaButton-right {
+  display: table;
+  margin-left: auto; }
+
+.NinjaButton-center {
+  display: table;
+  margin-left: auto;
+  margin-right: auto; }
+
+.NinjaButton-left {
+  display: table;
+  margin-right: auto; }
+
+.nb_button_url_link {
+  text-align: center; }
+  .nb_button_url_link .linkIcon {
+    margin-right: 10px;
+    vertical-align: middle; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb_AuthorProfile {
+  background: #f2f2f2;
+  padding: 20px 20px 20px 20px;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .nb_AuthorProfile .author_image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    z-index: 5; }
+    .nb_AuthorProfile .author_image .button_Image {
+      border-radius: 100%;
+      height: 100%;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 50;
+      top: 0;
+      background-color: #fff; }
+      .nb_AuthorProfile .author_image .button_Image svg {
+        margin: 0 auto; }
+    .nb_AuthorProfile .author_image img {
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+  .nb_AuthorProfile .author_information {
+    -ms-flex: 2 0 80px;
+        flex: 2 0 80px;
+    margin-left: 10px;
+    padding: 10px; }
+    .nb_AuthorProfile .author_information .title {
+      margin: 0; }
+    .nb_AuthorProfile .author_information .desc {
+      margin-top: 9px; }
+    .nb_AuthorProfile .author_information .social-icon {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      margin-top: 10px; }
+      .nb_AuthorProfile .author_information .social-icon .social-item {
+        background: white;
+        border: 1px solid #dddddd;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        padding: 15px;
+        text-decoration: none; }
+
+.nb_AuthorProfile_Vertical {
+  background: #f2f2f2;
+  padding: 3%;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .nb_AuthorProfile_Vertical .author_image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px; }
+    .nb_AuthorProfile_Vertical .author_image .button_Image {
+      border-radius: 100%;
+      height: 100%;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 50;
+      top: 0;
+      background-color: #fff; }
+      .nb_AuthorProfile_Vertical .author_image .button_Image svg {
+        margin: 0 auto; }
+    .nb_AuthorProfile_Vertical .author_image img {
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+  .nb_AuthorProfile_Vertical .author_information {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 13px; }
+    .nb_AuthorProfile_Vertical .author_information .designation {
+      position: relative;
+      top: -5px; }
+    .nb_AuthorProfile_Vertical .author_information .desc {
+      margin-top: 9px; }
+    .nb_AuthorProfile_Vertical .author_information .social-icon {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      margin-top: 10px;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      .nb_AuthorProfile_Vertical .author_information .social-icon .social-item {
+        background: white;
+        border: 1px solid #dddddd;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        padding: 15px;
+        text-decoration: none; }
+
+@media only screen and (max-width: 600px) {
+  .nb_AuthorProfile {
+    background: #f2f2f2;
+    padding: 3%;
+    border-radius: 5px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb_AuthorProfile .author_image {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin-top: 30px; }
+      .nb_AuthorProfile .author_image .button_Image {
+        border-radius: 100%;
+        height: 100%;
+        left: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 50;
+        top: 0;
+        background-color: #fff; }
+        .nb_AuthorProfile .author_image .button_Image svg {
+          margin: 0 auto; }
+      .nb_AuthorProfile .author_image img {
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+        top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto; }
+    .nb_AuthorProfile .author_information {
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 13px; }
+      .nb_AuthorProfile .author_information .designation {
+        position: relative;
+        top: -5px; }
+      .nb_AuthorProfile .author_information .desc {
+        margin-top: 9px; }
+      .nb_AuthorProfile .author_information .social-icon {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        margin-top: 10px;
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .nb_AuthorProfile .author_information .social-icon .social-item {
+          background: white;
+          border: 1px solid #dddddd;
+          border-radius: 50px;
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          padding: 15px;
+          text-decoration: none; } }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.nb-testimonial-display {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f2f2f2; }
+  .nb-testimonial-display .testimonial-content {
+    padding: 5px 20px 20px 20px; }
+  .nb-testimonial-display .testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    padding: 5px 10px 0px 14px; }
+    .nb-testimonial-display .testimonial-info .image {
+      background: #ddd;
+      margin-right: 15px;
+      position: relative;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px; }
+      .nb-testimonial-display .testimonial-info .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 100% !important; }
+  .nb-testimonial-display .middle-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial-display .middle-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px; }
+      .nb-testimonial-display .middle-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial-display .middle-testimonial-info .testimonial-details {
+      text-align: center; }
+  .nb-testimonial-display .right-testimonial-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    -ms-flex-align: center;
+        align-items: center; }
+    .nb-testimonial-display .right-testimonial-info .image {
+      background: #ddd;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-left: 15px; }
+      .nb-testimonial-display .right-testimonial-info .image img {
+        width: 100%;
+        height: 100%; }
+    .nb-testimonial-display .right-testimonial-info .testimonial-details {
+      text-align: center; }
