@@ -1,0 +1,26 @@
+.nb-testimonial {
+	border: solid 1px #ddd;
+	.testimonial-details {
+		top: 0 !important;
+	}
+}
+
+// InspectorControls
+.testimonialTypography {
+	// Submenu Items
+	.subTitle {
+		h2 {
+			padding-left: 10px;
+			.components-panel__body-toggle {
+				color: #949292;
+			}
+			button:focus:not(:disabled):not([aria-disabled="true"]) {
+				// color: red;
+				border: none;
+				box-shadow: none;
+				outline-offset: -2px;
+				outline: none;
+			}
+		}
+	}
+}

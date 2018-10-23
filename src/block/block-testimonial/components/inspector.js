@@ -5,7 +5,7 @@ const { __ } = wp.i18n;
 const { Component } = wp.element;
 
 // import Block component
-const { InspectorControls } = wp.editor;
+const { InspectorControls, PanelColorSettings } = wp.editor;
 
 // import Inspector components
 const {
@@ -104,7 +104,11 @@ export default class Inspector extends Component {
 					/>
 				</PanelBody>
 
-				<PanelBody title={__("Typography")} initialOpen={false}>
+				<PanelBody
+					title={__("Typography")}
+					initialOpen={false}
+					className="testimonialTypography"
+				>
 					{/* <SelectControl
 						label="Font"
 						value={fontFamily}
@@ -140,7 +144,11 @@ export default class Inspector extends Component {
 						initialPosition={0.1}
 					/>
 
-					<PanelBody title={__("Padding")} initialOpen={false}>
+					<PanelBody
+						title={__("Padding")}
+						initialOpen={false}
+						className="subTitle"
+					>
 						<RangeControl
 							label={__("Padding Left")}
 							value={paddingLeft}
@@ -179,7 +187,11 @@ export default class Inspector extends Component {
 						/>
 					</PanelBody>
 
-					<PanelBody title={__("Margin")} initialOpen={false}>
+					<PanelBody
+						title={__("Margin")}
+						initialOpen={false}
+						className="subTitle"
+					>
 						<RangeControl
 							label={__("Margin Left")}
 							value={marginLeft}
@@ -219,33 +231,23 @@ export default class Inspector extends Component {
 					</PanelBody>
 				</PanelBody>
 
-				<PanelBody title={__("Color Customization")} initialOpen={false}>
-					<PanelColor
-						title={__("Background Color")}
-						colorValue={testimonialBackgound}
-						initialOpen={false}
-					>
-						<ColorPalette
-							label={__("Backbround Color")}
-							colors={colors}
-							value={testimonialBackgound}
-							onChange={value => setAttributes({ testimonialBackgound: value })}
-						/>
-					</PanelColor>
+				<PanelColorSettings
+					initialOpen={false}
+					title={__("Color Customization")}
+					colorSettings={[
+						{
+							label: __("Background Color"),
+							value: testimonialBackgound,
+							onChange: value => setAttributes({ testimonialBackgound: value })
+						},
 
-					<PanelColor
-						title={__("Text Color")}
-						colorValue={testimonialTextColor}
-						initialOpen={false}
-					>
-						<ColorPalette
-							label={__("Text Color")}
-							value={testimonialTextColor}
-							onChange={value => setAttributes({ testimonialTextColor: value })}
-							colors={colors}
-						/>
-					</PanelColor>
-				</PanelBody>
+						{
+							label: __("Text Color"),
+							value: testimonialTextColor,
+							onChange: value => setAttributes({ testimonialTextColor: value })
+						}
+					]}
+				/>
 
 				<PanelBody title={__("Image Options")} initialOpen={false}>
 					<ToggleControl

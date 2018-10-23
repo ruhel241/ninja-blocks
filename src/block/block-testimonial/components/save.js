@@ -46,7 +46,7 @@ export default class NBTestimonialSave extends Component {
 
 		return (
 			<div
-				className="nb-testimonial-display"
+				className="nb-testimonial"
 				style={makeStyle({
 					backgroundColor: testimonialBackgound,
 					marginLeft:
