@@ -1,23 +1,15 @@
 .NinjaButton {
-	// display: table;
-	// border: solid 3px;
-	// margin-right: auto;
-	// background-color: red;
-	// color: #fff;
-	// border: solid 3px;
-	// display: inline-block;
-	// margin: 0 auto;
-	// width: auto;
-	// // position: relative;
-	// border-radius: 5%;
-	// line-height: 47px;
+	a {
+		text-decoration: none;
+		border: none !important;
+	}
+
+	// button:hover {
+	// 	background: #fff !important;
+	// }
 
 	.nb_button {
 		padding: 0.6em 1em;
-		// top: 0;
-		// margin: 10px;
-		// cursor: pointer;
-		// color: black ;
 	}
 }
 

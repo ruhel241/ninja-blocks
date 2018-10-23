@@ -19,7 +19,7 @@ import "./styles/editor.scss";
 const { registerBlockType } = wp.blocks;
 
 registerBlockType("ninja-blocks/nb-heading", {
-	title: __("Heading"),
+	title: __("NB Heading"),
 	description: __("Add a heading text"),
 	icon: "welcome-write-blog",
 	category: "ninja-blocks",

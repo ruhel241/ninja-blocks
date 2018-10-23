@@ -46,7 +46,7 @@ export default class NBTestimonialEdit extends Component {
 				marginRight,
 				marginTop,
 				marginBottom,
-				fontFamily,
+				//fontFamily,
 				letterSpacing,
 				autohorInfoLayout,
 				testimonialImgDiplay
@@ -125,7 +125,7 @@ export default class NBTestimonialEdit extends Component {
 							paddingRight: paddingRight != "" ? paddingRight + "px" : "",
 							paddingTop: paddingTop != "" ? paddingTop + "px" : "",
 							paddingBottom: paddingBottom != "" ? paddingBottom + "px" : "",
-							fontFamily: fontFamily,
+							//fontFamily: fontFamily,
 							letterSpacing: letterSpacing != "" ? letterSpacing + "px" : ""
 						})}
 						onChange={value =>

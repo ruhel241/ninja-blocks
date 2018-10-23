@@ -4,70 +4,6 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
-.nb-testimonial-display {
-  border-radius: 10px;
-  padding: 15px;
-  background-color: #f2f2f2; }
-  .nb-testimonial-display .testimonial-content {
-    padding: 5px 20px 20px 20px; }
-  .nb-testimonial-display .testimonial-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    padding: 5px 10px 0px 14px; }
-    .nb-testimonial-display .testimonial-info .image {
-      background: #ddd;
-      margin-right: 15px;
-      position: relative;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px; }
-      .nb-testimonial-display .testimonial-info .image img {
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        height: 100% !important; }
-  .nb-testimonial-display .middle-testimonial-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center; }
-    .nb-testimonial-display .middle-testimonial-info .image {
-      background: #ddd;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      margin-bottom: 10px; }
-      .nb-testimonial-display .middle-testimonial-info .image img {
-        width: 100%;
-        height: 100%; }
-    .nb-testimonial-display .middle-testimonial-info .testimonial-details {
-      text-align: center; }
-  .nb-testimonial-display .right-testimonial-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    -ms-flex-align: center;
-        align-items: center; }
-    .nb-testimonial-display .right-testimonial-info .image {
-      background: #ddd;
-      border-radius: 50%;
-      width: 80px;
-      height: 80px;
-      margin-left: 15px; }
-      .nb-testimonial-display .right-testimonial-info .image img {
-        width: 100%;
-        height: 100%; }
-    .nb-testimonial-display .right-testimonial-info .testimonial-details {
-      text-align: center; }
 /**
  * #.# Common SCSS
  *
@@ -115,6 +51,10 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.NinjaButton a {
+  text-decoration: none;
+  border: none !important; }
+
 .NinjaButton .nb_button {
   padding: 0.6em 1em; }
 
@@ -204,7 +144,9 @@
         height: 50px;
         margin-right: 10px;
         padding: 15px;
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-box-shadow: none;
+                box-shadow: none; }
 
 .nb_AuthorProfile_Vertical {
   background: #f2f2f2;

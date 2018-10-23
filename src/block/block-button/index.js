@@ -107,7 +107,7 @@ class NBButtonBlock extends Component {
 }
 
 registerBlockType("ninja-blocks/nb-button", {
-	title: __("Button"),
+	title: __("NB Button"),
 	description: __("Add a Button"),
 	icon: "admin-links",
 	category: "ninja-blocks",
@@ -187,14 +187,14 @@ registerBlockType("ninja-blocks/nb-button", {
 										border: borderColor
 											? `solid 3px ${borderColor}`
 											: undefined,
+
+										color: buttonTextColor,
 										fontSize: buttonSize
 									}}
+									onMouseOver={`style.backgroundColor='${hoverColor}'`}
+									onMouseOut={`style.backgroundColor='${buttonBackground}'`}
 								>
-									<RichText.Content
-										value={buttonText}
-										className="nb_button"
-										style={{ color: buttonTextColor }}
-									/>
+									<RichText.Content value={buttonText} className="nb_button" />
 								</button>
 							</a>
 						</div>
@@ -203,3 +203,9 @@ registerBlockType("ninja-blocks/nb-button", {
 		);
 	}
 });
+
+// const hover = {
+// 	style: {
+// 		backgroundColor: "red"
+// 	}
+// };

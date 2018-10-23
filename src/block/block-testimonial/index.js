@@ -19,7 +19,7 @@ import "./styles/editor.scss";
 const { registerBlockType } = wp.blocks;
 
 registerBlockType("ninja-blocks/nb-testimonial", {
-	title: __("Testimonial"),
+	title: __("NB Testimonial"),
 	description: __("Add a user testimonial with a name and title."),
 	icon: "format-quote",
 	category: "ninja-blocks",
@@ -119,17 +119,17 @@ registerBlockType("ninja-blocks/nb-testimonial", {
 			type: "string",
 			default: ""
 		},
-		fontFamily: {
-			type: "string",
-			default: ""
-		},
+		// fontFamily: {
+		// 	type: "string",
+		// 	default: ""
+		// },
 		letterSpacing: {
 			type: "string",
 			default: ""
 		},
 		autohorInfoLayout: {
 			type: "string",
-			default: ""
+			default: "middle-testimonial-info"
 		},
 		testimonialImgDiplay: {
 			type: "boolean",

@@ -23,7 +23,7 @@ const { __ } = wp.i18n;
 const { registerBlockType } = wp.blocks;
 
 registerBlockType("ninja-blocks/author-profile", {
-	title: __("Author Profile"),
+	title: __("NB Author Profile"),
 	description: __("Add your profile infomation"),
 	icon: "admin-users",
 	category: "ninja-blocks",

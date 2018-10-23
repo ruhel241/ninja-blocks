@@ -36,7 +36,7 @@ export default class NBTestimonialSave extends Component {
 			marginRight,
 			marginTop,
 			marginBottom,
-			fontFamily,
+			//fontFamily,
 			letterSpacing,
 			autohorInfoLayout,
 			testimonialImgDiplay
@@ -94,7 +94,7 @@ export default class NBTestimonialSave extends Component {
 								paddingBottom === "" || paddingBottom === undefined
 									? ""
 									: paddingBottom + "px",
-							fontFamily: fontFamily,
+							//fontFamily: fontFamily,
 							letterSpacing:
 								letterSpacing === "" || letterSpacing === undefined
 									? ""

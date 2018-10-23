@@ -38,7 +38,7 @@ export default class Inspector extends Component {
 				marginRight,
 				marginTop,
 				marginBottom,
-				fontFamily,
+				//fontFamily,
 				letterSpacing,
 				autohorInfoLayout,
 				testimonialImgDiplay
@@ -61,25 +61,25 @@ export default class Inspector extends Component {
 			{ color: "#EBEBEB", name: "gray" }
 		];
 
-		const fontFamilies = [
-			{ label: "Please Select...", value: "" },
-			{ label: "Arial", value: "Arial" },
-			{ label: "Aileron", value: "Aileron" },
-			{ label: "Verdana", value: "verdana" },
-			{ label: "Tahoma", value: "tahoma" },
-			{ label: "Lucida", value: "lucida" },
-			{ label: "Helvetica", value: "Helvetica" },
-			{ label: "Arial Black", value: "Arial Black" },
-			{ label: "Georgia", value: "Georgia" },
-			{ label: "Palatino", value: "Palatino" },
-			{ label: "Arizonia", value: "Arizonia" },
-			{ label: "Atomic Age", value: "Atomic Age" },
-			{ label: "Bad Script", value: "Bad Script" },
-			{ label: "Bangers", value: "Bangers" },
-			{ label: "BenchNine", value: "BenchNine" },
-			{ label: "Fantasy", value: "fantasy" },
-			{ label: "Sans-serif", value: "sans-serif" }
-		];
+		// const fontFamilies = [
+		// 	{ label: "Please Select...", value: "" },
+		// 	{ label: "Arial", value: "Arial" },
+		// 	{ label: "Aileron", value: "Aileron" },
+		// 	{ label: "Verdana", value: "verdana" },
+		// 	{ label: "Tahoma", value: "tahoma" },
+		// 	{ label: "Lucida", value: "lucida" },
+		// 	{ label: "Helvetica", value: "Helvetica" },
+		// 	{ label: "Arial Black", value: "Arial Black" },
+		// 	{ label: "Georgia", value: "Georgia" },
+		// 	{ label: "Palatino", value: "Palatino" },
+		// 	{ label: "Arizonia", value: "Arizonia" },
+		// 	{ label: "Atomic Age", value: "Atomic Age" },
+		// 	{ label: "Bad Script", value: "Bad Script" },
+		// 	{ label: "Bangers", value: "Bangers" },
+		// 	{ label: "BenchNine", value: "BenchNine" },
+		// 	{ label: "Fantasy", value: "fantasy" },
+		// 	{ label: "Sans-serif", value: "sans-serif" }
+		// ];
 
 		const autohorInfoLayouts = [
 			{ label: "Left", value: "" },
@@ -95,13 +95,22 @@ export default class Inspector extends Component {
 
 		return (
 			<InspectorControls key="inspector">
-				<PanelBody title={__("Typography")} initialOpen={false}>
+				<PanelBody title={__("Layout")} initialOpen={false}>
 					<SelectControl
+						label="Author Info layout"
+						value={autohorInfoLayout}
+						options={autohorInfoLayouts}
+						onChange={value => setAttributes({ autohorInfoLayout: value })}
+					/>
+				</PanelBody>
+
+				<PanelBody title={__("Typography")} initialOpen={false}>
+					{/* <SelectControl
 						label="Font"
 						value={fontFamily}
 						options={fontFamilies}
 						onChange={value => setAttributes({ fontFamily: value })}
-					/>
+					/> */}
 
 					<p> Description Font Size</p>
 					<FontSizePicker
@@ -236,15 +245,6 @@ export default class Inspector extends Component {
 							colors={colors}
 						/>
 					</PanelColor>
-				</PanelBody>
-
-				<PanelBody title={__("Layout")} initialOpen={false}>
-					<SelectControl
-						label="Author Info layout"
-						value={autohorInfoLayout}
-						options={autohorInfoLayouts}
-						onChange={value => setAttributes({ autohorInfoLayout: value })}
-					/>
 				</PanelBody>
 
 				<PanelBody title={__("Image Options")} initialOpen={false}>

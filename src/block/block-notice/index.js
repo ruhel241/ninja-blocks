@@ -29,7 +29,7 @@ const {
 const { Button } = wp.components;
 
 registerBlockType("ninja-blocks/nb-notice", {
-	title: __("Notice"),
+	title: __("NB Notice"),
 	description: __("Add a text notice"),
 	icon: "admin-post",
 	category: "ninja-blocks",

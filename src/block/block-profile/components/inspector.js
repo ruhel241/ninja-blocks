@@ -82,8 +82,25 @@ export default class Inspector extends Component {
 
 		return (
 			<InspectorControls>
-				<PanelBody title={__("Typography")} initialOpen={false}>
-					<PanelBody title={__("Title Options")} initialOpen={false}>
+				<PanelBody title={__("Layout")} initialOpen={false}>
+					<SelectControl
+						label="Profile layout"
+						value={profileLayout}
+						options={profileLayouts}
+						onChange={value => setAttributes({ profileLayout: value })}
+					/>
+				</PanelBody>
+
+				<PanelBody
+					title={__("Typography")}
+					initialOpen={false}
+					className="profileTypography"
+				>
+					<PanelBody
+						title={__("Title Options")}
+						initialOpen={false}
+						className="subTitle"
+					>
 						<FontSizePicker
 							fontSizes={fontSizes}
 							value={titleFontSize}
@@ -103,7 +120,11 @@ export default class Inspector extends Component {
 						/>
 					</PanelBody>
 
-					<PanelBody title={__("Designation Options")} initialOpen={false}>
+					<PanelBody
+						title={__("Designation Options")}
+						initialOpen={false}
+						className="subTitle"
+					>
 						<FontSizePicker
 							fontSizes={fontSizes}
 							value={designationFontSize}
@@ -122,7 +143,11 @@ export default class Inspector extends Component {
 						/>
 					</PanelBody>
 
-					<PanelBody title={__("Description Options")} initialOpen={false}>
+					<PanelBody
+						title={__("Description Options")}
+						initialOpen={false}
+						className="subTitle"
+					>
 						<FontSizePicker
 							fontSizes={fontSizes}
 							value={descriptionFontSize}
@@ -323,15 +348,6 @@ export default class Inspector extends Component {
 							/>
 						</PanelRow>
 					) : null}
-				</PanelBody>
-
-				<PanelBody title={__("Layout")} initialOpen={false}>
-					<SelectControl
-						label="Profile layout"
-						value={profileLayout}
-						options={profileLayouts}
-						onChange={value => setAttributes({ profileLayout: value })}
-					/>
 				</PanelBody>
 			</InspectorControls>
 		);

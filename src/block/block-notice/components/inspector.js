@@ -62,6 +62,22 @@ export default class Inspector extends Component {
 		return (
 			<InspectorControls>
 				<PanelBody>
+					<ToggleControl
+						label="Notice Display"
+						help={noticeDispaly ? "Notice Dismissable." : "Notice Always Show"}
+						checked={noticeDispaly}
+						onChange={value => setAttributes({ noticeDispaly: value })}
+					/>
+
+					<SelectControl
+						label="icon"
+						value={noticeIcon}
+						options={noticeIcons}
+						onChange={value => setAttributes({ noticeIcon: value })}
+					/>
+				</PanelBody>
+
+				<PanelBody>
 					<p> Font Size</p>
 					<FontSizePicker
 						fontSizes={fontSizes}
@@ -107,22 +123,6 @@ export default class Inspector extends Component {
 						colors={colors}
 						value={noticeTitleColor}
 						onChange={value => setAttributes({ noticeTitleColor: value })}
-					/>
-				</PanelBody>
-
-				<PanelBody>
-					<ToggleControl
-						label="Notice Display"
-						help={noticeDispaly ? "Notice Dismissable." : "Notice Always Show"}
-						checked={noticeDispaly}
-						onChange={value => setAttributes({ noticeDispaly: value })}
-					/>
-
-					<SelectControl
-						label="icon"
-						value={noticeIcon}
-						options={noticeIcons}
-						onChange={value => setAttributes({ noticeIcon: value })}
 					/>
 				</PanelBody>
 			</InspectorControls>
